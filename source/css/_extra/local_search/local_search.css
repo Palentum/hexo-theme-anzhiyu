@@ -26,15 +26,16 @@
   cursor: pointer;
 }
 #local-search .tag-list {
-  padding: 4px 8px;
+  padding: 1px 9px;
   border-radius: 8px;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.1rem;
   border: var(--style-border);
   cursor: pointer;
 }
 #local-search .search-dialog .local-search__hit-item .tag-list {
-  display: inline;
+  display: inline-block;
 }
 #local-search .search-dialog .local-search__hit-item .tag-list:hover {
   background: var(--anzhiyu-main);
