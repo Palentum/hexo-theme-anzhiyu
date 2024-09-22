@@ -225,7 +225,7 @@ window.addEventListener("load", () => {
                   post +
                   "</p>";
               }
-              if (dataTags.length) {
+              if (dataTags && dataTags.length) { // 添加检查 dataTags 是否为 undefined
                 str += '<div class="search-result-tags">';
 
                 for (let i = 0; i < dataTags.length; i++) {
@@ -250,6 +250,8 @@ window.addEventListener("load", () => {
             '<div id="local-search__hits-empty">' +
             GLOBAL_CONFIG.localSearch.languages.hits_empty.replace(/\$\{query}/, this.value.trim()) +
             "</div>";
+        } else if (count > 100) {
+          str = '<div id="local-search__hits-too-many">搜索到的结果太多啦，请优化搜索词</div>';
         }
         str += "</div>";
         $resultContent.innerHTML = str;
