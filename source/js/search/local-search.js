@@ -190,7 +190,7 @@ window.addEventListener("load", () => {
 
               str += '<div class="local-search__hit-item">';
               if (oneImage) {
-                str += `<div class="search-left"><img src=${oneImage}`;
+                str += `<div class="search-left"><img src=${oneImage}>`;
               } else {
                 str += '<div class="search-left" style="width:0">';
               }
