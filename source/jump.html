@@ -159,7 +159,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
-            const jumpUrl = params.get('jump') || '#';
+            const jumpUrl = params.get('url') || '#';
             const targetUrlElement = document.getElementById('targetUrl');
             const countdownElement = document.getElementById('countdown');
             const redirectButton = document.getElementById('redirectButton');
