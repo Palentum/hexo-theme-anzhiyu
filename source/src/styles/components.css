@@ -70,7 +70,7 @@
 }
 
 .acontainer img {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(128, 128, 128, 0.692);
     max-width: 100%;
     height: auto;
     border-radius: 12px;
