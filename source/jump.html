@@ -2,21 +2,21 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>正在跳转...</title>
+    <title>等待跳转...</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/main.css">
 </head>
 <body>
     <div class="container">
         <div class="card countdown-section">
-            <h1>即将跳转</h1>
+            <h1>等待跳转</h1>
             <div class="countdown" id="countdown">5</div>
             <p>目标地址：</p>
             <p class="target-url" id="targetUrl"></p>
             <button class="redirect-button" id="redirectButton">
-                立即跳转
+                点击跳转
                 <span class="material-symbols-rounded">arrow_forward</span>
             </button>
             <div class="announcement">
@@ -26,12 +26,12 @@
         </div>
         
         <div class="acontainer">
-        <a href="https://www.sailingnet.pro/">
-            <img src="https://img.touchgalstatic.org/2024/09/6e194add9120240905110255.webp" alt="Sailing风帆">
-        </a>
+            <a href="https://www.sailingnet.pro/">
+                <img src="https://img.touchgalstatic.org/2024/09/6e194add9120240905110255.webp" alt="Sailing风帆">
+            </a>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="src/js/main.js"></script>
 </body>
 </html>

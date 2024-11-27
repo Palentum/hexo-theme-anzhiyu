@@ -1,44 +1,11 @@
-:root {
-    --md-sys-color-primary: #006495;
-    --md-sys-color-on-primary: #ffffff;
-    --md-sys-color-primary-container: #cbe6ff;
-    --md-sys-color-on-primary-container: #001e31;
-    --md-sys-color-surface: #fafcff;
-    --md-sys-color-surface-container: #eef0f3;
-    --md-sys-color-on-surface: #191c1e;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-body {
-    background-color: var(--md-sys-color-surface);
-    color: var(--md-sys-color-on-surface);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
+@import './variables.css';
 
 .card {
     background-color: var(--md-sys-color-surface-container);
     border-radius: 16px;
     padding: 24px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    margin-bottom: auto;
 }
 
 .countdown-section {
@@ -97,9 +64,9 @@ body {
 }
 
 .acontainer {
-    margin-top: auto;
+    padding: 16px 0;
     text-align: center;
-    padding-bottom: env(safe-area-inset-bottom, 80px);
+    margin-top: auto;
 }
 
 .acontainer img {
@@ -110,15 +77,18 @@ body {
 }
 
 @media (max-width: 600px) {
-    body {
-        padding: 12px;
-    }
-
     .card {
         padding: 16px;
     }
 
     .countdown {
         font-size: 36px;
+    }
+
+    .ad-container {
+        position: sticky;
+        bottom: 0;
+        background-color: var(--md-sys-color-surface);
+        padding: 12px 0;
     }
 }
