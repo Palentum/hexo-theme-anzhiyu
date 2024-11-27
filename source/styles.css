@@ -1,0 +1,123 @@
+:root {
+    --md-sys-color-primary: #006495;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #cbe6ff;
+    --md-sys-color-on-primary-container: #001e31;
+    --md-sys-color-surface: #fafcff;
+    --md-sys-color-surface-container: #eef0f3;
+    --md-sys-color-on-surface: #191c1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card {
+    background-color: var(--md-sys-color-surface-container);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.countdown-section {
+    text-align: center;
+}
+
+.countdown {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--md-sys-color-primary);
+    margin: 16px 0;
+}
+
+.target-url {
+    word-break: break-all;
+    color: var(--md-sys-color-primary);
+    margin: 16px 0;
+}
+
+.redirect-button {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.redirect-button.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.redirect-button:hover {
+    background-color: #005780;
+}
+
+.material-symbols-rounded {
+    font-size: 20px;
+}
+
+.announcement {
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    padding: 16px;
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+.acontainer {
+    margin-top: auto;
+    text-align: center;
+    padding-bottom: env(safe-area-inset-bottom, 80px);
+}
+
+.acontainer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .countdown {
+        font-size: 36px;
+    }
+}
